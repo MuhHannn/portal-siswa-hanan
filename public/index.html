@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Registrasi & Login Siswa</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+  <body>
+    <h1>Registrasi Siswa</h1>
+    <form id="register-form">
+      <label for="nama">Nama:</label>
+      <input type="text" id="nama" name="nama" required /><br />
+      <label for="NIS">NIS:</label>
+      <input type="text" id="NIS" name="NIS" required /><br />
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required /><br />
+      <button type="submit">Daftar</button>
+    </form>
+
+    <h1>Login Siswa</h1>
+    <form id="login-form">
+      <label for="loginNIS">NIS:</label>
+      <input type="text" id="loginNIS" name="NIS" required /><br />
+      <label for="loginPassword">Password:</label>
+      <input
+        type="password"
+        id="loginPassword"
+        name="password"
+        required
+      /><br />
+      <button type="submit">Login</button>
+    </form>
+
+    <h1>Cek Token</h1>
+    <form id="check-token-form">
+      <label for="token">Token:</label>
+      <input type="text" id="token" name="token" required /><br />
+      <button type="submit">Cek Token</button>
+    </form>
+
+    <h1>Logout</h1>
+    <form id="logout-form">
+      <label for="logoutToken">Token:</label>
+      <input type="text" id="logoutToken" name="token" required /><br />
+      <button type="submit">Logout</button>
+    </form>
+
+    <div id="response"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
